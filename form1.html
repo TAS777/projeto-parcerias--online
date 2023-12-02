@@ -51,8 +51,8 @@
 
                 <br> <br>
                 <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade" class="labelinput"> usuário instagram sem @</label>
+                    <input type="text" name="usuario" id="usuario" class="inputUser" required>
+                    <label for="usuario" class="labelinput"> usuário instagram sem @</label>
                 </div>
                 <br> <br>
                 <div class="inputBox">
@@ -65,13 +65,13 @@
                 </div>
                 <br> <br>
                 <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
-                    <label for="endereco" class="labelinput">Criar uma senha</label>
+                    <input type="password" name="senha" id="senha1" class="inputUser" required>
+                    <label for="password" class="labelinput">Criar uma senha</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="cep" id="cep" class="inputUser" required>
-                    <label for="endereco" class="labelinput">Repetir senha</label>
+                    <input type="password" name="senha" id="senha1.1" class="inputUser" required>
+                    <label for="password" class="labelinput">Repetir senha</label>
                 </div>
                 <br> <br>
                 <input type="submit" name="submit" id="submit">
@@ -84,8 +84,81 @@
     <footer>
         <p>&copy; 2023 Real Influencer - Conectando Influencers e Negócios</p>
     </footer>
+
+    <!-- JAVASCRIPT-->
+
     <script>
-        const form = document.getElementById('form')
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.getElementById('form');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Evitar o envio padrão do formulário
+
+                // Validar os campos antes de enviar
+                if (validateForm()) {
+                    // Se a validação for bem-sucedida, você pode armazenar os dados localmente
+                    storeFormDataLocally();
+                }
+            });
+
+            function validateForm() {
+                // Lógica para validar cada campo do formulário
+                // Retorna true se todos os campos forem válidos, senão retorna false
+
+                var nome = document.getElementById('nome').value;
+                var email = document.getElementById('email').value;
+                var telefone = document.getElementById('telefone').value;
+                var dataNascimento = document.getElementById('data_nascimento').value;
+                var usuario = document.getElementById('usuario').value;
+                var senha1 = document.getElementById('senha1').value;
+                var senha2 = document.getElementById('senha1.1').value;
+
+                if (nome.trim().length < 7) {
+                    alert('O nome deve ter no mínimo 7 caracteres.');
+                    return false;
+                }
+
+                if (email.trim().length < 10 || !email.includes('@')) {
+                    alert('O email deve ter no mínimo 10 caracteres e incluir @.');
+                    return false;
+                }
+
+                if (telefone.length !== 11) {
+                    alert('O telefone deve ter exatamente 11 dígitos.');
+                    return false;
+                }
+
+                // Adicione mais validações conforme necessário
+
+                return true; // Se chegou aqui, todos os campos são válidos
+            }
+
+            function storeFormDataLocally() {
+                // Armazenar os dados localmente no navegador usando o Local Storage
+
+                var formData = {
+                    nome: document.getElementById('nome').value,
+                    email: document.getElementById('email').value,
+                    telefone: document.getElementById('telefone').value,
+                    dataNascimento: document.getElementById('data_nascimento').value,
+                    usuario: document.getElementById('usuario').value,
+                    genero: document.getElementById('genero').value,
+                    senha1: document.getElementById('senha1').value,
+                    senha2: document.getElementById('senha1.1').value,
+                    // Adicione outros campos conforme necessário
+                };
+
+                // Converter o objeto para uma string JSON e armazenar no Local Storage
+                localStorage.setItem('formData', JSON.stringify(formData));
+
+                // Exemplo: exibindo os dados no console
+                console.log('Dados do formulário armazenados localmente:');
+                console.log(formData);
+            }
+        });
+
+
     </script>
 
 </body>

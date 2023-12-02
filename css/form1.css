@@ -26,11 +26,11 @@ body {
 .menu-links a {
     margin-left: 15px;
     text-decoration: none;
-    color: #ffffff;
+    color: #fafafa;
 }
 
 .box {
-    color: white;
+    color: rgb(241, 239, 239);
     width: 350px;
     margin: auto;
     /* Centraliza o formulário horizontalmente */
@@ -39,7 +39,7 @@ body {
     margin-bottom: 30px;
 
 
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(51, 50, 50, 0.9);
     padding: 25px;
     border-radius: 15px;
 }
