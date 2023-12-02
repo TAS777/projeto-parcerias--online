@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form1.css">
+    <title>Cadastre-se Agora !</title>
+</head>
+
+<body>
+    <!--  cabeçalho -->
+    <div class="menu-iniciar">
+        <div class="logo"><b class="logo">Real Influencer</b></div>
+        <div class="menu-links">
+            <a href="index.html">Início</a>
+            <a href="login.html">Login</a>
+            <a href="influencers.html">Influencers</a>
+            <a href="#">Parceiros</a>
+            <a href="#">Sobre</a>
+        </div>
+    </div>
+
+    <!-- inicio do formulario-->
+
+    <div class="box">
+        <form id="form">
+            <fieldset>
+                <legend> <b>Cadastrar Agora</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name=" nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelinput">Nome completo</label>
+                </div>
+                <br> <br>
+                <div class="inputBox">
+                    <input type="email" name=" email" id="email" class="inputUser" required>
+                    <label for="email" class="labelinput"> Seu melhor Email</label>
+                </div>
+                <br> <br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelinput">Whatsapp com DDD</label>
+                </div>
+                <br> <br>
+
+
+                <label for="data_nascimento">Data de Nascimento</label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+
+                <br> <br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelinput"> usuário instagram sem @</label>
+                </div>
+                <br> <br>
+                <div class="inputBox">
+                    <label for="genero">Gênero:</label>
+                    <select name="genero" id="genero" class="inputUser" required>
+                        <option class="select1" value="feminino">Feminino</option>
+                        <option class="select1" value="masculino">Masculino</option>
+                        <option class="select1" value="outros">Outros</option>
+                    </select>
+                </div>
+                <br> <br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelinput">Criar uma senha</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cep" id="cep" class="inputUser" required>
+                    <label for="endereco" class="labelinput">Repetir senha</label>
+                </div>
+                <br> <br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+
+        </form>
+    </div>
+
+    <!--FIM DO FORMULARIO-->
+    <footer>
+        <p>&copy; 2023 Real Influencer - Conectando Influencers e Negócios</p>
+    </footer>
+    <script>
+        const form = document.getElementById('form')
+    </script>
+
+</body>
+
+</html>

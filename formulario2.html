@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formu2.css">
+    <title>Formulário de Cadastro para Influenciadores</title>
+</head>
+
+<body>
+    <div class="body2">
+
+        <form action="/cadastrar" method="post">
+            <h2>Formulário de Cadastro para Influenciadores</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required>
+            <span class="span">Nome deve ter no minimo 3 caracteres</span>
+
+            <label for="email">E-mail:</label>
+            <input type="email" placeholder="Digite seu melhor email" id="email" name="email" required>
+
+            <label for="instagram">Instagram:</label>
+            <input type="text" placeholder="Digite seu nome de usuário sem o @" id="instagram" name="instagram"
+                required>
+
+            <label for="seguidores">Número de Seguidores:</label>
+            <input type="number" placeholder="Digite seu número de seguidores até o momento" id="seguidores"
+                name="seguidores" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <span class="span">Digite uma senha com no minimo 8 cracteres</span>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

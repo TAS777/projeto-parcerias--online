@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #272525;
+}
+
+.menu-iniciar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #272525;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#8f95ec, #8de1f0, #ffffff, #fffafa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.banner {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.button {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    color: beige;
+    font-size: 60px;
+    border-radius: 50px;
+}
+
+#influencers-button {
+    background-image: url('imagens/influ2.jpeg');
+    /* Substitua 'influencers.jpg' pelo caminho da sua imagem */
+}
+
+#partners-button {
+    background-image: url('imagens/negocios2.jpeg');
+    /* Substitua 'partners.jpg' pelo caminho da sua imagem */
+}
+
+.titulo1 {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    /* Cor do texto */
+    padding: 20px;
+    background: linear-gradient(to right, #DF2840, #0D6AAC);
+    /* Degrade de azul para lilás */
+    margin: 0;
+    margin-top: 0;
+}
+
+
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a seção hero */
+#hero {
+    background-image: -moz-element();
+    /* Cor de fundo azul */
+    color: #fff;
+    /* Cor do texto branco */
+    text-align: center;
+    padding: 40px 0;
+    /* Espaçamento interno superior e inferior */
+    margin-top: 0;
+}
+
+/* Estilo para o conteúdo da hero */
+.hero-content {
+    max-width: 800px;
+    /* Largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centralizar o conteúdo na página */
+}
+
+/* Estilo para o título da hero */
+.hero-content h1 {
+    font-size: 2.5em;
+    /* Tamanho da fonte grande */
+}
+
+/* Estilo para o parágrafo da hero */
+.hero-content p {
+    font-size: 1.2em;
+    /* Tamanho da fonte menor */
+    margin-bottom: 20px;
+    /* Espaçamento inferior */
+}
+
+/* Estilo para o botão da hero */
+.hero-content .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DF2840;
+    /* Cor de fundo branca */
+    color: #fff;
+    /* Cor do texto azul */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    /* Borda arredondada */
+    transition: background-color 0.3s ease;
+    /* Transição suave da cor de fundo */
+}
+
+/* Efeito de hover para o botão da hero */
+.hero-content .cta-button:hover {
+    background-color: #2980b9;
+    /* Cor de fundo azul mais escura */
+    color: #fff;
+    /* Cor do texto branca */
+}
+
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.step img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 18px;
+    color: #555;
+}
+
+#contato {
+    background-color: #DF2840;
+    /* Cor de fundo da seção */
+    color: #fff;
+    /* Cor do texto */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #fff;
+    /* Cor de fundo do botão */
+    color: #007BFF;
+    /* Cor do texto do botão */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    /* Cor de fundo do botão ao passar o mouse */
+    color: #fff;
+    /* Cor do texto do botão ao passar o mouse */
+}
+
+#beneficios {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #131212;
+}
+
+#beneficios h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(71, 48, 128);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.benefit p {
+    font-size: 20px;
+    color: #ffffff;
+}

@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #DF2840, #0D6AAC);
+    margin: 0;
+}
+
+.menu-iniciar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131313;
+    padding: 15px;
+    margin-bottom: 30px;
+    /* Adiciona uma margem de 30px na parte inferior */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#daa6a6, #DF2840, #0D6AAC, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.box {
+    color: white;
+    width: 350px;
+    margin: auto;
+    /* Centraliza o formulário horizontalmente */
+    margin-top: 30px;
+    /* Adiciona um espaço entre o menu e o formulário */
+    margin-bottom: 30px;
+
+
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+}
+
+legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 7px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelinput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5px;
+}
+
+.inputUser:focus~.labelinput,
+.inputUser:valid~.labelinput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+#data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.select1 {
+    background-color: #353434;
+    color: #ffffff;
+}
+
+#submit {
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(135, 42, 158));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
