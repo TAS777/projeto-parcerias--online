@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Seu Site ou Aplicativo</title>
-    <style>
+    <script> function toggleMenu() {
+            var menuLinks = document.querySelector('.menu-links');
+            menuLinks.style.display = (menuLinks.style.display === 'none' || menuLinks.style.display === '') ? 'block' : 'none';
+        }</script>
 
-    </style>
 </head>
 
 <body>
+    <!-- BARRA MENU-->
     <div class="menu-iniciar">
         <div class="logo"><b class="logo">Real Influencer</b></div>
         <div class="menu-links">
@@ -21,31 +24,33 @@
             <a href="#">Parceiros</a>
             <a href="#">Sobre</a>
         </div>
+        <button class="menu-btn" onclick="toggleMenu()"><b>Menu</b></button>
     </div>
+
+    <!--BANNER PRINCIPAL-->
 
     <div class="banner">
         <img src="imagens/banner3.png" alt="Banner do Site/Aplicativo">
     </div>
 
+    <div class="divtitulo1">
+        <h1 class="titulo1"> Conectando influenciadores às oportunidades perfeita</h1>
+        <p class="paragrafopadrao">
+            Potencialize sua presença digital e amplie seus horizontes com
+            parcerias estratégicas que elevam marcas ao topo.
+            Descubra o poder da visibilidade com a nossa agência
+            especializada em Facebook Ads
+        </p>
+    </div>
 
     <section id="hero">
         <div class="hero-content">
-            <h1>Conectando Influencers e Negócios</h1>
+            <h1>Conectando <br> Influencers e Negócios</h1>
             <p>Amplie sua marca. Alcance novos públicos. Faça parcerias incríveis.</p>
             <a href="form1.html" class="cta-button">Cadastre-se Agora</a>
         </div>
     </section>
 
-
-    <h1 class="titulo1"> Descubra Seu Caminho: Torne-se um Influencer ou Parceiro Agora!</h1>
-
-    <div class="button-container">
-        <button id="influencers-button" class="button"
-            onclick="window.location.href='influencers.html'">Influencers</button>
-
-        <button id="partners-button" class="button"
-            onclick="window.location.href='pagina_parceiros.html'">Parceiros</button>
-    </div>
 
 
 
@@ -70,7 +75,7 @@
     <section id="contato">
         <h2>Entre em Contato</h2>
         <p>Tem alguma pergunta? Entre em contato conosco.</p>
-        <a href="mailto:contato@connectify.com" class="cta-button">Enviar E-mail</a>
+        <a href="https://wa.me/message/FFU5OZUU7HDRL1" class="cta-button">Enviar Mensagem</a>
     </section>
 
 
@@ -78,7 +83,7 @@
 
 
 
-    <footer>
+    <footer id="rodape">
         <p>&copy; 2023 Real Influencer - Conectando Influencers e Negócios</p>
     </footer>
 
