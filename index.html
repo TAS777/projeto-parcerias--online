@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Seu Site ou Aplicativo</title>
     <script> function toggleMenu() {
             var menuLinks = document.querySelector('.menu-links');
@@ -16,7 +17,6 @@
 <body>
     <!-- BARRA MENU-->
     <div class="menu-iniciar">
-        <div class="logo"><b class="logo">Real Influencer</b></div>
         <div class="menu-links">
             <a href="index.html">Início</a>
             <a href="login.html">Login</a>
@@ -33,15 +33,6 @@
         <img src="imagens/banner3.png" alt="Banner do Site/Aplicativo">
     </div>
 
-    <div class="divtitulo1">
-        <h1 class="titulo1"> Conectando influenciadores às oportunidades perfeita</h1>
-        <p class="paragrafopadrao">
-            Potencialize sua presença digital e amplie seus horizontes com
-            parcerias estratégicas que elevam marcas ao topo.
-            Descubra o poder da visibilidade com a nossa agência
-            especializada em Facebook Ads
-        </p>
-    </div>
 
     <section id="hero">
         <div class="hero-content">
@@ -56,20 +47,22 @@
 
     <section id="beneficios">
         <h2>Benefícios</h2>
-        <div class="benefits">
-            <div class="benefit">
-                <img src="imagens/alcance.png" alt="Benefício 1">
-                <p>Amplie seu alcance de audiência</p>
-            </div>
-            <div class="benefit">
-                <img src="imagens/procure.png" alt="Benefício 2">
-                <p>Descubra novas oportunidades de negócios</p>
-            </div>
-            <div class="benefit">
-                <img src="imagens/contrua.png" alt="Benefício 3">
-                <p>Construa parcerias duradouras</p>
-            </div>
-        </div>
+
+        <ul id="minhaLista">
+            <li class="li1" onclick="mostrarParagrafo('paragrafo1')">Amplie seu alcance de audiência</li>
+            <li class="li1" onclick="mostrarParagrafo('paragrafo2')">Descubra novas oportunidades de Negócios</li>
+            <!-- Adicione mais itens conforme necessário -->
+        </ul>
+
+        <p class="p1" id="paragrafo1">Acesse nosa pagina parceiros e entenda como alcançar mais
+            clientes com uso de ferramentas como o Gerenciador de anuncios.</p>
+
+        <p class="p1" id="paragrafo2">Embrace a revolução do marketing digital conosco
+            e Descubra Novas Oportunidades de Negócios! Somos a ponte que conecta
+            influenciadores a parcerias estratégicas,
+            enquanto impulsionamos empresas por meio de anúncios poderosos.</p>
+        <!-- Adicione mais parágrafos conforme necessário -->
+
     </section>
 
     <section id="contato">
@@ -81,10 +74,23 @@
 
 
 
+    <script>
+        function mostrarParagrafo(idParagrafo) {
+            // Oculta todos os parágrafos
+            var paragrafos = document.querySelectorAll('p');
+            for (var i = 0; i < paragrafos.length; i++) {
+                paragrafos[i].style.display = 'none';
+            }
+
+            // Exibe o parágrafo correspondente ao ID passado como argumento
+            var paragrafoSelecionado = document.getElementById(idParagrafo);
+            paragrafoSelecionado.style.display = 'block';
+        }
+    </script>
 
 
     <footer id="rodape">
-        <p>&copy; 2023 Real Influencer - Conectando Influencers e Negócios</p>
+        <p>&copy; 2023 Real Influencer - Mídia e marketing</p>
     </footer>
 
 

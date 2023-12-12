@@ -4,6 +4,10 @@ body {
     background-color: #272525;
 }
 
+#icon2 {
+    text-align: center;
+}
+
 .menu-iniciar {
     display: flex;
     justify-content: space-between;
@@ -65,14 +69,6 @@ body {
 
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    background: -webkit-linear-gradient(#8f95ec, #8de1f0, #ffffff, #fffafa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 
 .banner {
@@ -88,7 +84,7 @@ body {
 
 
 .titulo1 {
-    font-size: 30px;
+    font-size: 23px;
     text-align: center;
     color: #fff;
     /* Cor do texto */
@@ -166,7 +162,7 @@ body {
 }
 
 #contato {
-    background-color: #2980b9;
+    background-color: #363738;
     /* Cor de fundo da seção */
     color: #fff;
     /* Cor do texto */
@@ -191,21 +187,21 @@ body {
     text-decoration: none;
     background-color: #fff;
     /* Cor de fundo do botão */
-    color: #007BFF;
+    color: #1f2020;
     /* Cor do texto do botão */
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #17c26d;
     /* Cor de fundo do botão ao passar o mouse */
     color: #fff;
     /* Cor do texto do botão ao passar o mouse */
 }
 
 #beneficios {
-    padding: 50px 0;
+    padding: 10px 0;
     text-align: center;
     background-color: #131212;
 }
@@ -216,45 +212,29 @@ body {
     margin-bottom: 20px;
 }
 
-.benefits {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+
+
+.p1 {
+
+    display: none;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 25px;
+
+
 }
 
-.benefit {
-    flex: 1;
-    max-width: 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: rgb(71, 48, 128);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.benefit img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-.benefit p {
+.li1 {
+    color: #fff;
     font-size: 20px;
-    color: #ffffff;
+    text-align: left;
+    margin-bottom: 9px;
+    padding: 7px;
+    background-color: #DF2840;
 }
 
-.divtitulo1 {
-    background-color: #fff;
-}
-
-.paragrafopadrao {
-    background-color: #fff;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 10px;
-    font-size: 21px
-}
 
 #rodape {
     text-align: center;
